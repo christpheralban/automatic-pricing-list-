@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <style>
+    .darkmode {
+      background-color: black;
+      color: whitesmoke;
+      transition: background-color 0.9s;
+    }
+    /* The switch - the box around the slider */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      background: url("images/lll.png");
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    input:checked + .slider {
+      background-color: #000;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196f3;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+      background: url("images/lll.png") no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <body>
+    <div class="container-fluid pt-3">
+      <div class="row">
+        <div class="col-6 ml-4 pl-5">
+          Social Media Dashboard <br />
+          Total Followers: 23,004
+        </div>
+
+        <div class="col-5 ml-5 pr-4  text-right">
+          Dark Mode
+          <span class="text-muted">Annualy</span>
+          <label class="switch">
+            <input
+              onclick="myfunction()"
+              id="Button1"
+              value="Click"
+              onclick="switchVisible();"
+              type="checkbox"
+            />
+            <span class="slider round"></span>
+          </label>
+          <span class="text-muted"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div
+        class="col-lg-2 col-sm-5 mt-5 ml-5 mr-5"
+        style="
+          height: 260px;
+          border-top: 4px solid aqua;
+          text-align: center;
+          background-color: whitesmoke;
+        "
+      >
+        <div>
+          <i style="color: blue" class="fa fa-facebook-square pt-5"> </i
+          >@nathanf
+          <h3 class="pt-2" style="font-size: 40px">1987</h3>
+          <p class="pt-2">Followers</p>
+        </div>
+      </div>
+      <div
+        class="col-lg-2 col-sm-5 mt-5 mt-5 ml-5 mr-5"
+        style="
+          height: 260px;
+          border-top: 4px solid aqua;
+          text-align: center;
+          background-color: whitesmoke;
+        "
+      >
+        <div>
+          <i style="color: blue" class="fa fa-facebook-square pt-5"> </i
+          >@nathanf
+          <h3 class="pt-2" style="font-size: 40px">1987</h3>
+          <p class="pt-2">Followers</p>
+        </div>
+      </div>
+
+      <div
+        class="col-lg-2 col-sm-5 mt-5 mt-5 ml-5 mr-5"
+        style="
+          height: 260px;
+          border-top: 4px solid hsl(356, 69%, 56%);
+          text-align: center;
+          background-color: whitesmoke;
+        "
+      >
+        <div>
+          <i style="color: blue" class="fa fa-facebook-square pt-5"> </i
+          >@nathanf
+          <h3 class="pt-2" style="font-size: 40px">1987</h3>
+          <p class="pt-2">Followers</p>
+        </div>
+      </div>
+
+      <div
+        class="col-lg-2 col-sm-5 mt-5 mt-5 ml-5 mr-5"
+        style="
+          height: 260px;
+          border-top: 4px solid hsl(356, 69%, 56%);
+          text-align: center;
+          background-color: whitesmoke;
+        "
+      >
+        <div>
+          <i style="color: blue" class="fa fa-facebook-square pt-5"> </i
+          >@nathanf
+          <h3 class="pt-2" style="font-size: 40px">1987</h3>
+          <p class="pt-2">Followers</p>
+        </div>
+      </div>
+    </div>
+    <h3 class="pt-4 ml-4 pl-5" style="position: relative; left: 10px">
+      Overview - Today
+    </h3>
+
+    <div class="row justify-content-center">
+      <div
+        class="col-lg-2 col-sm-5 mt-2 ml-5 mr-5"
+        style="height: 140px; text-align: center; background-color: whitesmoke"
+      >
+        <div class="row pt-4">
+          <div class="col-6">
+            <p>Page Views</p>
+          </div>
+          <div style="color: blue" class="col-6 fa fa-facebook-square"></div>
+        </div>
+        <div class="row">
+          <div class="col-6 pr-5" style="font-size: 30px">87</div>
+          <div class="col-6">3%</div>
+        </div>
+      </div>
+      <div
+        class="col-lg-2 col-sm-5 mt-2 ml-5 mr-5"
+        style="height: 140px; text-align: center; background-color: whitesmoke"
+      >
+        <div class="row pt-4">
+          <div class="col-6">
+            <p>Page Views</p>
+          </div>
+          <div style="color: blue" class="col-6 fa fa-facebook-square"></div>
+        </div>
+        <div class="row">
+          <div class="col-6 pr-5" style="font-size: 30px">87</div>
+          <div class="col-6">3%</div>
+        </div>
+      </div>
+      <div
+        class="col-lg-2 col-sm-5 mt-2 ml-5 mr-5"
+        style="height: 140px; text-align: center; background-color: whitesmoke"
+      >
+        <div class="row pt-4">
+          <div class="col-6">
+            <p>Page Views</p>
+          </div>
+          <div style="color: blue" class="col-6 fa fa-facebook-square"></div>
+        </div>
+        <div class="row">
+          <div class="col-6 pr-5" style="font-size: 30px">87</div>
+          <div class="col-6">3%</div>
+        </div>
+      </div>
+      <div
+        class="col-lg-2 col-sm-5 mt-2 ml-5 mr-5"
+        style="height: 140px; text-align: center; background-color: whitesmoke"
+      >
+        <div class="row pt-4">
+          <div class="col-6">
+            <p>Page Views</p>
+          </div>
+          <div style="color: blue" class="col-6 fa fa-facebook-square"></div>
+        </div>
+        <div class="row">
+          <div class="col-6 pr-5" style="font-size: 30px">87</div>
+          <div class="col-6">3%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div
+        class="col-lg-2 col-sm-5 mt-2 ml-5 mr-5"
+        style="height: 140px; text-align: center; background-color: whitesmoke"
+      >
+        <div class="row pt-4">
+          <div class="col-6">
+            <p>Page Views</p>
+          </div>
+          <div style="color: blue" class="col-6 fa fa-facebook-square"></div>
+        </div>
+        <div class="row">
+          <div class="col-6 pr-5" style="font-size: 30px">87</div>
+          <div class="col-6">3%</div>
+        </div>
+      </div>
+      <div
+        class="col-lg-2 col-sm-5 mt-2 ml-5 mr-5"
+        style="height: 140px; text-align: center; background-color: whitesmoke"
+      >
+        <div class="row pt-4">
+          <div class="col-6">
+            <p>Page Views</p>
+          </div>
+          <div style="color: blue" class="col-6 fa fa-facebook-square"></div>
+        </div>
+        <div class="row">
+          <div class="col-6 pr-5" style="font-size: 30px">87</div>
+          <div class="col-6">3%</div>
+        </div>
+      </div>
+      <div
+        class="col-lg-2 col-sm-5 mt-2 ml-5 mr-5"
+        style="height: 140px; text-align: center; background-color: whitesmoke"
+      >
+        <div class="row pt-4">
+          <div class="col-6">
+            <p>Page Views</p>
+          </div>
+          <div style="color: blue" class="col-6 fa fa-facebook-square"></div>
+        </div>
+        <div class="row">
+          <div class="col-6 pr-5" style="font-size: 30px">87</div>
+          <div class="col-6">3%</div>
+        </div>
+      </div>
+      <div
+        class="col-lg-2 col-sm-5 mt-2 ml-5 mr-5"
+        style="height: 140px; text-align: center; background-color: whitesmoke"
+      >
+        <div class="row pt-4">
+          <div class="col-6">
+            <p>Page Views</p>
+          </div>
+          <div style="color: blue" class="col-6 fa fa-facebook-square"></div>
+        </div>
+        <div class="row">
+          <div id="u" class="col-6 pr-5" style="font-size: 30px">87</div>
+          <div id="u" class="col-6">3%</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function myfunction() {
+      var element = document.body;
+      element.classList.toggle("darkmode");
+      document.getElementsByTagName("p").style.color = "black";
+    }
+  </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+</html>
